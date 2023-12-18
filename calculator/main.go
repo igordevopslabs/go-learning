@@ -37,6 +37,8 @@ func main() {
 
 	//TODO: pedir input dos valores para o usuario
 	//Pesquisar Scanf
+	//ref: https://www.geeksforgeeks.org/fmt-scanf-function-in-golang-with-examples/
+
 	fmt.Println("Informe primeiro numero: ")
 	fmt.Scanf("%d", &a)
 	fmt.Println("Informe segundo numero: ")
