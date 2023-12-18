@@ -30,24 +30,27 @@ func multiplicar(a, b int) int {
 	return a * b
 }
 
+var a int
+var b int
+
 func main() {
 
 	//TODO: pedir input dos valores para o usuario
 	//Pesquisar Scanf
+	fmt.Println("Informe primeiro numero: ")
+	fmt.Scanf("%d", &a)
+	fmt.Println("Informe segundo numero: ")
+	fmt.Scanf("%d", &b)
 
-	for i := 0; i < 10; i++ {
-		for j := 0; j < 10; j++ {
-			resSoma := soma(i, j)
-			fmt.Printf("Numeros recebidos: %d e %d. Resultado soma: %d\n", i, j, resSoma)
+	resSoma := soma(a, b)
+	fmt.Printf("Resultado soma: %d\n", resSoma)
 
-			resSub := diminuir(i, j)
-			fmt.Printf("Numeros recebidos: %d e %d. Resultado subtração: %d\n", i, j, resSub)
+	resSub := diminuir(a, b)
+	fmt.Printf("Resultado subtração: %d\n", resSub)
 
-			resDiv := dividir(i, j)
-			fmt.Printf("Numeros recebidos: %d e %d. Resultado divisão: %d\n", i, j, resDiv)
+	resDiv := dividir(a, b)
+	fmt.Printf("Resultado divisão: %d\n", resDiv)
 
-			resMult := multiplicar(i, j)
-			fmt.Printf("Numeros recebidos: %d e %d. Resultado multiplicação: %d\n", i, j, resMult)
-		}
-	}
+	resMulti := multiplicar(a, b)
+	fmt.Printf("Resultado multiplicação: %d\n", resMulti)
 }
