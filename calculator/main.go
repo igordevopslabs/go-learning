@@ -18,7 +18,7 @@ func diminuir(a, b int) int {
 
 func dividir(a, b int) int {
 	if b == 0 {
-		fmt.Println("~> ERRO: Impossivel dividir por 0: ")
+		fmt.Printf("~> ERRO: Impossivel dividir por 0: ")
 		return 0
 	}
 
